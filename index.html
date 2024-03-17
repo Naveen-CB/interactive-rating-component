@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- js -->
+  <script defer src="script.JS"></script>
+</head>
+<body>
+
+
+
+  <main id="main">
+    <div class="star"><img src="images/icon-star.svg" alt="Star-icon" ></div>
+    <h1 class="heading">How did we do?</h1>
+    <p class="description">
+      Please let us know how we did with your support request. All feedback is appreciated
+    to help us improve our offering!
+    </p>
+    
+    <form id="form">
+      <div class="inputs">
+        <input type="radio" value="1" id="rating-1" name="rating" required>
+        <label for="rating-1" class="label-space" >1</label>
+        <input type="radio" value="2" id="rating-2" name="rating" required>
+        <label for="rating-2" class="label-space">2</label>
+        <input type="radio" value="3" id="rating-3" name="rating" required>
+        <label for="rating-3" class="label-space">3</label>
+        <input type="radio" value="4" id="rating-4" name="rating" required>
+        <label for="rating-4" class="label-space">4</label>
+        <input type="radio" value="5" id="rating-5" name="rating" required>
+        <label for="rating-5" class="label-space">5</label>
+      </div>
+      <button id="button1" type="submit" class="button">Submit</button>
+    </form>
+    
+  </main>
+  <aside class="pop-up" id="pop-up">
+    <figure><img src="images/illustration-thank-you.svg" alt="thank-you" class="thanks"></figure>
+    <div class="rat">
+      <div id="ratings"></div>
+    </div>
+    <h2 class="heading">Thank you!</h2>
+    <p class="description Tq-para">We appriciate you to taking the time to give a rating. If you ever need more support, don't hesitate to get touch in!</p>
+    <button type="button" id="button2" class="button">Ok</button>
+  </aside>
+ 
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
